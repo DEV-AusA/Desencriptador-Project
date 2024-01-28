@@ -2,7 +2,7 @@
 const encriptarTexto = ()=>{
 
     // obtengo el texto del textarea
-    const textoOriginal = document.getElementById('box-principal').value;
+    const textoOriginal = document.getElementById('box-principal').value.toLowerCase();
 
     const vocalesEncriptadas = {
         a: 'enter',
