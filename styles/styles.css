@@ -1,0 +1,334 @@
+
+body{
+    background: linear-gradient(#FEFEFE, #888888);
+    /* background: rgba(243, 245, 252, 1); */
+}
+
+/* HEADER */
+
+header, main, footer {
+    margin: 10px 210px;
+}
+header{
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: rgba(243, 245, 252, 1);
+    background-image: url(/assets/img/fondo-titulo.png);
+    background-size: cover;
+}
+
+.logo-a{
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(10, 56, 113, 1);
+    padding: 0 0 5px 0;
+}
+
+header h1{
+    font-family: 'Inter', sans-serif;
+    text-align: right;
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: 1px solid #d5d5d5;
+    width: 400px;
+    display: inline-block;
+    color: rgba(10, 56, 113, 1);
+    text-shadow: 1px 1px rgb(243, 245, 252);
+}
+
+/* MAIN */
+main{
+    padding: 10px 0;
+    border-radius: 15px;
+    background: rgba(243, 245, 252, 1);;
+}
+
+/* box left*/
+.box-texts{
+    display: flex;
+}
+
+.box-text-entrada{
+    width: 65%;
+    text-align: left;
+    margin: 40px 5%;
+    box-sizing: border-box;
+}
+
+.box-text-entrada textarea{
+    width: 80%;
+    background: none;
+    border: none;
+    resize: none; /*evita que se modifique el tamaño del box*/
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    outline: none; /* elimina el contorno en el estado :focus */
+    display: block; /*para que cada elemento quede dejabo de otro*/
+    color: rgba(10, 56, 113, 1);
+    padding: 0 5%;
+}
+
+textarea::placeholder{
+    color: rgb(10, 56, 113);
+}
+
+.box-text-entrada img{
+    vertical-align: middle; /* para que la imagen se aline verticalmente con el texto*/
+    padding-left: 5%;
+}
+
+.box-text-entrada h5{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block; /* hace que el h5 sea un elemento en línea */
+    margin: 10px;
+}
+
+.container-botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botones-principal{
+	width: 350px;
+	height: 65px;
+	margin: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	border: none;
+	background: rgba(10, 56, 113, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: 300ms;
+}
+
+.botones-principal:hover{
+    background: rgba(243, 245, 252, 1);
+    transform: scale(1.1);
+    transition: 300ms;
+    border: 1px solid rgba(10, 56, 113, 1);
+    color: rgba(10, 56, 113, 1);
+}
+
+.botones-principal:active{
+    transform: scale(1); 
+}
+
+/* con esto oculto elementos*/
+.oculto{
+    display: none;
+}
+
+/* box right*/
+.box-text-encriptado{
+    width: 35%;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 40px;
+    box-shadow: 0 0 10px 1px rgb(195, 201, 207);
+}
+.box-temporal{
+    margin: 10% auto;
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nino-sentado{
+    width: 60%;
+}
+.caja-binaria{
+    width: 150px;
+    height: 150px;
+    background-image: url(/assets/img/caja-binaria.png);
+    background-size: cover;
+    margin: 0 auto;
+    transition: 500ms;
+}
+.caja-binaria:hover{
+    background-image: url(/assets/img/caja-binaria-abierta.png);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.box-temporal h3{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 50px;
+}
+
+.box-temporal p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin: 20px 50px;
+}
+
+.box-desencriptado{
+    background: none;
+    border: none;
+    resize: none;
+    max-width: 100%;
+    font-size: 1.5em;
+    outline: none;
+    margin: 10px 0 170px;
+    color: gray;
+}
+
+/* FOOTER*/
+
+footer {
+	text-align: left;
+	padding: 10px 20px;
+	border-radius: 15px;
+    background: linear-gradient(to right, rgba(243, 245, 252), rgb(10, 56, 113)); /* para degradado de colores */
+}
+
+footer img{
+    width: 50px;
+    margin: 0 40px;
+}
+
+footer h6{
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 40px;
+}
+
+/* RESPONSIVE*/
+
+/*768px*/
+@media screen and (max-width:768px){
+    header, main, footer{
+        width: auto;
+        margin: 20px 10px;
+    }
+    header h1{
+        font-size: 2.8em;
+    }
+    .box-texts{
+        display: inline-block;
+        width: 100%;
+    }
+    .box-text-entrada{
+        width: auto;
+    }
+    .container-botones{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .botones-principal{
+        width: 300px;
+        margin: 20px;
+    }
+    .botones-principal:active{
+        transform: scale(0.9);
+        border: 1px solid rgb(10, 56, 113);
+        background: rgba(243, 245, 252);
+        color: rgb(10, 56, 113);
+    }
+    .box-text-encriptado button{
+        width: 90%;
+    }
+    .box-text-encriptado{
+        width: auto;
+        background-color: white;
+    }
+    .box-temporal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Alinea los elementos en linea y todos tienen el mismo espacio
+        incluido el borde izquierdo del primer elemento y el borde derecho del ultimo
+        requiero de un display: flex; o display: inline-flex;*/
+        width: 680px;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box; /*En este modo, el tamaño total del elemento se calcula sumando el contenido y el borde, pero no el relleno.*/
+    }
+    .columna{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nino-sentado{
+        width: 150px;
+    }
+    .box-temporal h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 20px;
+    }
+    .box-temporal p{
+        margin: 10px 0;
+    }
+    .caja-binaria:active{
+        background-image: url(/assets/img/caja-binaria-abierta.png);
+        transform: scale(0.9);
+        transition: 200ms;
+    }
+    .nino-sentado:active{
+        transform: scale(0.9);
+        transition: 200ms;
+    }
+    .box-desencriptado{
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+
+/* 375px*/
+@media screen and (max-width:375px){
+    header, main, footer{
+        width: auto;
+        margin: 20px 10px;
+    }
+    header h1{
+        font-size: 2em;
+        width: auto;
+    }
+    .logo-a{
+        width: 20%;
+    }
+    .box-text-entrada textarea{
+        font-size: 1.5em;
+    }
+    .container-botones{
+        display: inline-block;
+        width: 100%;
+    }
+    .box-text-entrada{
+        width: auto;
+        box-sizing: border-box;
+    }
+    .box-text-entrada h5{
+        margin: auto 10px;
+        font-size: 0.8em;
+    }
+    .botones-principal{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .nino-sentado, .caja-binaria{
+        display: none;
+    }
+    .box-temporal{
+        width: 100%;
+    }
+    .box-temporal h3{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2em;
+    }
+    footer{
+        text-align: center;
+    }
+    footer img{
+        width: 30px;
+    }
+    footer h6{
+        font-size: 10px;
+    }
+}
