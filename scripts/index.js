@@ -102,11 +102,6 @@ const copiarTexto = () =>{
     navigator.clipboard.writeText(textoACopiar)
 }
 
-// let texto = 'hola como estas';
-// let textoEncriptado = 'hoberlenter cobermober imesstenters';
-// console.log(encriptarTexto(texto));
-// console.log(desencriptarTexto(textoEncriptado));
-
 // BOTONES
 // declaro el boton encriptar
 const botonEncriptar = document.getElementById('boton-encriptar');
