@@ -176,8 +176,7 @@ textarea::placeholder{
 }
 
 /* FOOTER*/
-
-footer {
+footer{
 	padding: 10px 20px;
 	border-radius: 15px;
     background: linear-gradient(to right, rgba(243, 245, 252), rgb(10, 56, 113)); /* para degradado de colores */
@@ -298,6 +297,13 @@ footer a:hover{
     .box-desencriptado{
         width: 80%;
         margin: 30px auto;
+    }
+    footer a{
+        color: #fff;
+    }
+    footer button:active{
+        transform: scale(0.9);
+        transition: 400ms;
     }
 }
 
