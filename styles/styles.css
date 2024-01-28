@@ -13,7 +13,7 @@ header{
     padding: 20px 20px;
     border-radius: 15px;
     background: rgba(243, 245, 252, 1);
-    background-image: url(./assets/img/fondo-titulo.png);
+    background-image: url(/assets/img/fondo-titulo.png);
     background-size: cover;
 }
 
@@ -142,13 +142,13 @@ textarea::placeholder{
 .caja-binaria{
     width: 150px;
     height: 150px;
-    background-image: url(./assets/img/caja-binaria.png);
+    background-image: url(/assets/img/caja-binaria.png);
     background-size: cover;
     margin: 0 auto;
     transition: 500ms;
 }
 .caja-binaria:hover{
-    background-image: url(./assets/img/caja-binaria-abierta.png);
+    background-image: url(/assets/img/caja-binaria-abierta.png);
     transform: scale(1.1);
     transition: 500ms;
 }
@@ -266,7 +266,7 @@ footer h6{
         margin: 10px 0;
     }
     .caja-binaria:active{
-        background-image: url(../assets/img/caja-binaria-abierta.png);
+        background-image: url(/assets/img/caja-binaria-abierta.png);
         transform: scale(0.9);
         transition: 200ms;
     }
