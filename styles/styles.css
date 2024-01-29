@@ -220,6 +220,24 @@ footer a:hover{
 
 /* RESPONSIVE*/
 
+/*1080px*/
+@media screen and (max-width:1080px){
+    header, main, footer{
+        margin: 10px 10%;
+    }
+    .box-text-entrada{
+        width: 55%;
+    }
+    .box-text-encriptado{
+        width: 30%;
+        margin: 20px;
+        padding: 0 15px;        
+    }
+    .botones-principal{
+        width: 200px;
+    }
+}
+
 /*768px*/
 @media screen and (max-width:768px){
     header, main, footer{
